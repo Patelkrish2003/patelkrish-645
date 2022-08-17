@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+           
+            
+        @keyframes example{
+            0% {background-color: green;}
+            25% {background-color: rgb(68, 0, 128);}
+            50% {background-color: gray;}
+            75% {background-color: yellow;}
+           100% {background-color: red;}
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 15s;}
+</style>
+
+</head>
+
+<body>
+     
+  
+    <section>
+         
+        <div style="height: 1000px; width: 500px;">
+            <p>
+              Append  Method
+            </p>
+            
+            <ol>
+                <li>
+
+                </li>
+            </ol>
+            </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("div").click(function(){
+            $(this).css("background-color", "black");
+            $(this).css("color", "white");
+            $("div p").append("<br>"+"click here"+"</br>"); 
+            $("ol").append("<li> </li>");
+           
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+        jquery
+    </title>
+      
+    <style>
+        .container {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border: 5px solid black;
+        }
+    </style>
+      
+    <script src=
+        "https://code.jquery.com/jquery-3.4.0.min.js">
+    </script>
+</head>
+  
+<body>
+    
+    <p><button>hide</button></p>
+      
+    <div class="container" style="color:green"></div>
+      
+    <script type="text/javascript">
+        $(document).mouseup(function (e) {
+            if ($(e.target).closest(".container").length
+                        === 0) {
+                $(".container").hide();
+            }
+        });
+    </script>
+</body>
+  
+</html>   

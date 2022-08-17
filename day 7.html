@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>Demo Javascript </title>
+		
+		<style type="text/css">
+			body{background-color:aqua;}
+			#D1{background-color:violet;height:300px;width:300px;}
+		</style>
+		
+		<script type="text/javascript">
+			function alertFun()
+
+
+			
+            {
+				alert('Hello');
+			}
+			
+			function confirmFun()
+            {
+				if(confirm("Are you sure..??"))
+				{
+					alert("YESSSSS");
+				}
+				else
+				{
+					alert("NOOOOO");
+				}
+			}
+			
+			function promptFun(){
+				var FirstName=prompt("Enter First Name Here..");
+				var MiddleName=prompt("Enter Middle Name Here..");
+				var LastName=prompt("Enter Last Name Here..");
+				alert(FirstName +" "+MiddleName+" "+LastName);
+			}
+			
+			function bodyBGChangeToYellow(){
+				document.body.style.backgroundColor="Yellow";
+			}
+			
+			function bodyBGChangeToText(){
+				document.body.style.backgroundColor=prompt("Enter Background Color Here..");
+			}
+			
+			function colorPickerBodyBG(){
+				document.body.style.backgroundColor=document.getElementById("CP").value;
+			}
+			
+			function yellowBGDiv(){
+				document.getElementById("D1").style.backgroundColor="Yellow";
+			}
+			
+			function divBGChangeToText(){
+				document.getElementById("D1").style.backgroundColor=prompt("Enter Background Color Here..");
+			}
+			
+			function colorPickerDivBG(){
+				document.getElementById("D1").style.backgroundColor=document.getElementById("CP1").value;
+			}
+			
+			function demo1(){
+				var a=prompt("A number ")
+				var b=prompt("B number ")
+
+				if (a>b){
+					alert("a number is maximum")
+				}
+					else
+				{
+					alert("b number is maximum")
+				}
+				
+		
+			}
+		
+		function demo2(){
+			var a=prompt("A number")
+			var b=prompt("B number")
+
+			if (b>a){
+				alert("A number is minimum")
+			}
+			else {
+				alert("B number is minimum")
+			}
+
+		}
+		
+		function demo3(){
+			var r=prompt("enter the radius of circle")
+			var area;
+			area=3.14*r*r;
+			alert(area+"is area of circle")
+
+		}
+		
+		
+		
+		
+		
+		
+		</script>
+		
+		<script src="scripts/demo.js" type="text/javascript"></script>
+		
+	</head>
+	<body>
+		
+		<div id="D1">
+			<h1>MEET PATEL</h1>
+		</div><hr/>
+		
+		<input type="button" value="Alert Inline" onclick="alert('Hello ')" />
+		<input type="button" value="Alert Internal" onclick="alertFun()" />
+		<input type="button" value="Alert External" onclick="alertFun()" /><hr/>
+		
+		<input type="button" value="Confirm Inline" onclick="confirm('Are You Sure..??')"/>
+		<input type="button" value="Confirm Internal" onclick="confirmFun()"/>
+		<input type="button" value="Confirm External" onclick="confirmFun()"/><hr/>
+		
+		<input type="button" value="Prompt Inline" onclick="prompt('Enter First Name')"/>
+		<input type="button" value="Prompt Internal" onclick="promptFun()"/>
+		<input type="button" value="Prompt External" onclick="promptFun()"/><hr/>
+		
+		<input type="button" value="yellow Background color" onclick="bodyBGChangeToYellow()" /><hr/>
+		<input type="button" value="Text Backgrond Color To Body" onclick="bodyBGChangeToText()"/><hr/>
+		<input type="color" id="CP" onchange="colorPickerBodyBG()"/><hr/>
+		
+		<input type="button" value="Yellow Div Background" onclick="yellowBGDiv()"/><hr/>
+		<input type="button" value="Text Backgrond Color To Div" onclick="divBGChangeToText()"/><hr/>
+		<input type="color" id="CP1" onchange="colorPickerDivBG()" /><hr/>
+	
+		<input type="button" value="which number is maximum" onclick="demo1()"/>
+		<input type="button" value="which number is minimum" onclick="demo2()"/>
+		<input type="button" value="find area of circle" onclick="demo3()"/>
+	
+	
+	
+	
+	</body>
+</html>

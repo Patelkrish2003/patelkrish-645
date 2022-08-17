@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo Javascript </title>
+	</head>
+	<body>
+		<p>
+            focus and blur event in js
+        </p>
+			<input type="text" id="ontext" value="Enter the text"><br>
+
+
+            <button onclick="clickFocus()">Focus on</button>
+            <button onclick="clickBlur()">Blur on</button>
+
+            <script>
+                function clickFocus(){
+                    document.getElementById("ontext").focus();
+                    document.getElementById("ontext").style.backgroundColor="blue";
+                 }
+
+                 function clickBlur(){
+                    document.getElementById("ontext").blur();
+                    document.getElementById("ontext").style.backgroundColor="white";
+                    
+                 }
+            </script>
+	
+	</body>
+</html>

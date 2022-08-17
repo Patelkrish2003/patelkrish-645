@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo Javascript </title>
+	</head>
+	<body>
+		<p>
+            uppercase and lowercase
+        </p>
+			Enter the name:<input type="text" id="fname" onchange="UpperCase ">
+            <button onclick="UpperCase()">uppercase</button><br>
+
+
+            Enter the name:<input type="text" id="sname" onchange="LowerCase ">
+            <button onclick="LowerCase()">lowercase</button><br>
+
+
+            <script>
+                function UpperCase(){
+                   const x= document.getElementById("fname");
+                    x.value=x.value.toUpperCase();
+                 }
+
+                 function LowerCase(){
+                   const x= document.getElementById("sname");
+                    x.value=x.value.toLowerCase();
+                 }
+            </script>
+	
+	</body>
+</html>
